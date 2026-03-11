@@ -65,6 +65,7 @@ body::-webkit-scrollbar{
   flex-direction: column;
   float: right;
   margin-right: 200px;
+  /* margin-right: clamp(30px, 3vw, 150px); */
   display: none;
   background-color: #050526;
   padding: 4px;
