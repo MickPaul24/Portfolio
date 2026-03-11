@@ -788,7 +788,7 @@ transition: 0.3s ease-in-out;
   display: inline-flex;
   flex-direction: column;
   float: right;
-  margin-right: 50px;
+  margin-right: 40px;
   /* display: none; */
   background-color: #050526;
   padding: 2px;
