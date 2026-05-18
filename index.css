@@ -704,8 +704,11 @@ transition: 0.3s ease-in-out;
   width: 89%;
   text-align: center;
   transition: 0.3s;
-  border-radius: 20px;
+  border-radius: 6px;
+  padding: 1px 2px;
   justify-content: center;
+  background-color: rgb(47, 58, 105)  ;
+  
   }
  
  
