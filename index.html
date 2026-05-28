@@ -6,212 +6,419 @@
   <title>MickPaul Kuteesa L | Software Engineer</title>
   <link rel="stylesheet" href="index.css">
   <link rel="icon" type="images/png" href="images/favicon.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <div class="header">
+
+  <!-- ── Header ── -->
+  <header class="header">
     <p class="logo"><span class="logo1">M</span>ickPaul</p>
-    
-    <div class="navbar">
+    <nav class="navbar">
       <ul>
         <li><a class="nav-link" href="#home">Home</a></li>
         <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#experience">Experience</a></li>
+        <li><a class="nav-link" href="#education">Education</a></li>
         <li><a class="nav-link" href="#projects">Projects</a></li>
         <li><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
-    </div>
+    </nav>
     <div class="hamburgerMenu">
       <span class="bar"></span>
       <span class="bar"></span>
       <span class="bar"></span>
     </div>
-  </div>
-  <div class="hero" id="home">
+  </header>
+
+  <!-- ── Hero ── -->
+  <section class="hero" id="home">
     <div class="hero1">
-      <p class="greet">Hello,Hi</p>
-      <p class="name"><span class="name1">I'm</span> MickPaul Kuteesa</p>
-      <p class="intro">A <span style="color: white;">software engineer</span> who is focused and passionate about building clean, usable and impactful digital products.</p>
-      <a href="#contact"><button class="contactBtn">Contact Me</button></a>
-      <a href="#home"><button class="downloadBtn">Download CV</button></a>
+      <p class="greet"><span class="greet-wave">👋</span> Hello, Hi</p>
+      <h1 class="name"><span class="name1">I'm</span> MickPaul Kuteesa</h1>
+      <p class="role-line"><span class="role-tag">Software Engineer</span></p>
+      <p class="intro">Focused and passionate about building <span class="highlight">clean, usable</span> and <span class="highlight">impactful</span> digital products that solve real-world problems.</p>
+      <div class="hero-btns">
+        <a href="#contact"><button class="contactBtn">Contact Me</button></a>
+        <a href="#home"><button class="downloadBtn">Download CV <i class="fa-solid fa-download"></i></button></a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://www.linkedin.com/in/mickpaul-kuteesa-b7a0bb333/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="" target="_blank" title="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
     </div>
     <div class="hero2">
       <div class="pic">
-      <div class="me"></div>
-    </div>
-    </div>
-  </div>
-  <div class="about" id="about">
-    <p class="aboutHead" >About Me</p>
-    <p class="aboutIntro">I build web applications focused on clarity, usability, and real-world problem solving. My core stack includes PHP, Java, JavaScript, TypeScript, C#, Python, and modern frontend frameworks.</p>
-    <div class="stats">
-      <div class="stat1">
-        <p class="stat1txt">3<span class="sign">+</span></p>
-        <p class="stat1tx">Years of Experience</p>
-      </div>
-      <div class="stat1">
-        <p class="stat1txt">8<span class="sign">+</span></p>
-        <p class="stat1tx">Projects</p>
-      </div>
-      <div class="stat1">
-        <p class="stat1txt">90<span class="sign">%</span></p>
-        <p class="stat1tx">Client Satisfaction</p>
+        <div class="me"></div>
       </div>
     </div>
-  </div>
+  </section>
 
-    <p class="cleints">What clients say about me</p>
-  <div class="reviewcarousel-container">
-    <button id="prev" class="nav-btn">❮</button>
+  <!-- ── About ── -->
+  <section class="about-section" id="about">
+    <div class="section-inner">
+      <div class="section-label"><span>01</span> About Me</div>
+      <h2 class="section-title">About Me</h2>
+      <p class="aboutIntro">I build web applications focused on clarity, usability, and real-world problem solving. My core stack includes PHP, Java, JavaScript, TypeScript, C#, Python, and modern frontend frameworks. I thrive in collaborative environments and love turning complex problems into elegant, simple solutions.</p>
+      <div class="stats">
+        <div class="stat1">
+          <p class="stat1txt">3<span class="sign">+</span></p>
+          <p class="stat1tx">Years of Experience</p>
+        </div>
+        <div class="stat1">
+          <p class="stat1txt">8<span class="sign">+</span></p>
+          <p class="stat1tx">Projects Completed</p>
+        </div>
+        <div class="stat1">
+          <p class="stat1txt">90<span class="sign">%</span></p>
+          <p class="stat1tx">Client Satisfaction</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <div class="reviewcarousel">
-      <div class="reviewcarousel-track">
+  <!-- ── Skills ── -->
+  <section class="skills-section" id="skills">
+    <div class="section-inner">
+      <div class="section-label"><span>02</span> Skills</div>
+      <h2 class="section-title">Technical Skills</h2>
+      <p class="section-sub">Technologies and tools I work with</p>
+      <div class="skills-grid">
 
-
-        <div class="carousel-item">
-
-          <div class="customer">
-                  <img src="images/jude.jpg" >
-                    <p>Thomas</p>
+        <div class="skill-group fade-in">
+          <div class="skill-group-header">
+            <i class="fa-solid fa-code"></i>
+            <h3>Languages</h3>
           </div>
-          <p class="headertxt" >Founder: TechHub</p>
-          <div class="review">
-                <p class="review1" >
-                 Working with MickPaul was a fantastic experience. He quickly understood our requirements, communicated clearly throughout the process, and delivered exactly what we needed on time and beyond expectations. His attention to detail and problem-solving skills are top-notch.
-                </p>
+          <div class="skill-tags">
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">C#</span>
+          </div>
+        </div>
+
+        <div class="skill-group fade-in">
+          <div class="skill-group-header">
+            <i class="fa-solid fa-layer-group"></i>
+            <h3>Frontend</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">TailwindCSS</span>
+          </div>
+        </div>
+
+        <div class="skill-group fade-in">
+          <div class="skill-group-header">
+            <i class="fa-solid fa-server"></i>
+            <h3>Backend</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express</span>
+            <span class="skill-tag">.NET / C#</span>
+            <span class="skill-tag">REST APIs</span>
+          </div>
+        </div>
+
+        <div class="skill-group fade-in">
+          <div class="skill-group-header">
+            <i class="fa-solid fa-database"></i>
+            <h3>Databases</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">MongoDB</span>
+          </div>
+        </div>
+
+        <div class="skill-group fade-in">
+          <div class="skill-group-header">
+            <i class="fa-solid fa-wrench"></i>
+            <h3>Tools & Platforms</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Vercel</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">VS Code</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Experience ── -->
+  <section class="experience-section" id="experience">
+    <div class="section-inner">
+      <div class="section-label"><span>03</span> Experience</div>
+      <h2 class="section-title">Work Experience</h2>
+      <p class="section-sub">My professional journey so far</p>
+      <div class="timeline">
+
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Freelance Software Engineer</h3>
+                <p class="timeline-company">Self-employed</p>
+              </div>
+              <span class="timeline-date">2022 — Present</span>
+            </div>
+            <p class="timeline-desc">Building full-stack web applications for clients across various industries. Delivered 8+ projects including e-commerce platforms, AI-powered tools, and business websites — consistently exceeding expectations and achieving high client satisfaction.</p>
+            <div class="timeline-tags">
+              <span>React</span><span>Node.js</span><span>PHP</span><span>MySQL</span><span>Vercel</span>
             </div>
           </div>
+        </div>
 
-
-
-<div class="carousel-item">
-
-          <div class="customer">
-                  <img src="images/isabella.jpg" >
-                    <p>Isabella</p>
-          </div>
-          <p class="headertxt" >CEO: Glosom</p>
-          <div class="review">
-                <p class="review1" >
-                 We came to MickPaul with just a concept, and he turned it into a fully working web application. He has a great eye for design, usability, and performance. The app runs smoothly, and our users love the interface. Highly recommended for anyone looking for a developer who truly cares about quality.
-                </p>
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Junior Web Developer</h3>
+                <p class="timeline-company">TechHub Uganda</p>
+              </div>
+              <span class="timeline-date">2021 — 2022</span>
+            </div>
+            <p class="timeline-desc">Contributed to web platform development, collaborated with design and product teams, and maintained existing codebases while implementing new features based on client requirements.</p>
+            <div class="timeline-tags">
+              <span>JavaScript</span><span>HTML / CSS</span><span>PHP</span>
             </div>
           </div>
+        </div>
 
+      </div>
+    </div>
+  </section>
 
-        <div class="carousel-item">
+  <!-- ── Education ── -->
+  <section class="education-section" id="education">
+    <div class="section-inner">
+      <div class="section-label"><span>04</span> Education</div>
+      <h2 class="section-title">Education</h2>
+      <p class="section-sub">Academic background and certifications</p>
+      <div class="timeline">
 
-          <div class="customer" >
-                  <img src="images/john.jpg" ">
-                    <p>John</p>
-          </div>
-          <p class="headertxt" >Co-founder: Capital Markets</p>
-          <div class="review">
-                <p class="review1" >
-                MickPaul is not only a skilled developer but also a great collaborator. He explained technical concepts in simple terms and worked seamlessly with our team. His adaptability and professionalism made the entire project stress-free and enjoyable.
-                </p>
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Bachelor of Science in Software Engineering</h3>
+                <p class="timeline-company">Makerere University</p>
+              </div>
+              <span class="timeline-date">2020 — 2024</span>
             </div>
+            <p class="timeline-desc">Studied software engineering principles, data structures, algorithms, databases, and software design patterns. Built a strong foundation in both theory and practical application of modern software systems.</p>
           </div>
+        </div>
 
-        <div class="carousel-item">
-
-          <div class="customer" >
-                  <img src="images/Barbra.jpg">
-                    <p>Barbra</p>
-          </div>
-          <p class="headertxt" >City Hall Advocates</p>
-          <div class="review">
-                <p class="review1" >
-                MickPaul is not only a skilled developer but also a great collaborator. He explained technical concepts in simple terms and worked seamlessly with our team. His adaptability and professionalism made the entire project stress-free and enjoyable.
-                </p>
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Full-Stack Web Development Certification</h3>
+                <p class="timeline-company">Online Certification</p>
+              </div>
+              <span class="timeline-date">2022</span>
             </div>
+            <p class="timeline-desc">Completed comprehensive full-stack web development training covering modern frameworks, REST APIs, databases, authentication, and cloud deployment strategies.</p>
           </div>
+        </div>
+
       </div>
     </div>
+  </section>
 
-    <button id="next" class="nav-btn">❯</button>
-  </div>
+  <!-- ── Projects ── -->
+  <section class="projects-section" id="projects">
+    <div class="section-inner">
+      <div class="section-label"><span>05</span> Projects</div>
+      <h2 class="section-title">My Projects</h2>
+      <p class="section-sub">A selection of work from the past three years</p>
+      <div class="projectDiv">
 
+        <div class="projectOne">
+          <div class="project-top">
+            <p class="projectHead">MindGrove-AI</p>
+            <span class="project-type">AI Tool</span>
+          </div>
+          <img class="projectImage" src="images/mindgrove.png" alt="MindGrove AI">
+          <p class="projectDes">AI-powered study and research assistant that helps students streamline their research workflow with smart summaries and insights.</p>
+          <div class="project-bottom">
+            <a href="https://www.mindgrove.me/" target="_blank"><button class="linkBtn">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+          </div>
+        </div>
 
-  <div class="projects" id="projects">
-    <p class="myProjects">My Projects</p>
-    <p class="projectsIntro">For the past three years I have been able to work on many different projects and these are some of them.</p>
-    <div class="projectDiv">
-      <div class="projectOne">
-        <p class="projectHead">MindGrove-AI</p>
-        <img class="projectImage" src="images/mindgrove.png">
-        <p class="projectDes">AI powered study research assistant.</p>
-        <a href="https://www.mindgrove.me/" target="_blank"><button class="linkBtn">Live Demo</button></a>
+        <div class="projectOne">
+          <div class="project-top">
+            <p class="projectHead">Cake Amor</p>
+            <span class="project-type">E-Commerce</span>
+          </div>
+          <img class="projectImage" src="images/cakeamor.jpeg" alt="Cake Amor and More">
+          <p class="projectDes">Small business website with an online ordering system, product catalog, and a clean, conversion-focused design.</p>
+          <div class="project-bottom">
+            <a href="https://cakeamorandmore.vercel.app/" target="_blank"><button class="linkBtn">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+          </div>
+        </div>
+
+        <div class="projectOne">
+          <div class="project-top">
+            <p class="projectHead">Axa Gadgets</p>
+            <span class="project-type">E-Commerce</span>
+          </div>
+          <img class="projectImage" src="images/axagadgets.png" alt="Axa Gadgets">
+          <p class="projectDes">E-commerce frontend for a tech gadget store, featuring modern UI, product filtering, and a responsive mobile layout.</p>
+          <div class="project-bottom">
+            <a href="https://axa-gadgets.vercel.app/" target="_blank"><button class="linkBtn">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+          </div>
+        </div>
+
       </div>
+    </div>
+  </section>
 
-      <div class="projectOne">
-        <p class="projectHead">Cake Amor and more</p>
-        <img class="projectImage" src="images/cakeamor.jpeg">
-        <p class="projectDes">Small business website with online ordering.</p>
-        <a href="https://cakeamorandmore.vercel.app/" target="_blank"><button class="linkBtn">Live Demo</button></a>
+  <!-- ── Testimonials ── -->
+  <section class="testimonials-section">
+    <div class="section-inner">
+      <div class="section-label"><span>06</span> Testimonials</div>
+      <h2 class="section-title">What Clients Say</h2>
+      <div class="reviewcarousel-container">
+        <button id="prev" class="nav-btn"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="reviewcarousel">
+          <div class="reviewcarousel-track">
+
+            <div class="carousel-item">
+              <div class="customer">
+                <img src="images/jude.jpg" alt="Thomas">
+                <div class="customer-info">
+                  <p class="customer-name">Thomas</p>
+                  <p class="headertxt">Founder — TechHub</p>
+                </div>
+              </div>
+              <div class="review">
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+                <p class="review1">Working with MickPaul was a fantastic experience. He quickly understood our requirements, communicated clearly throughout the process, and delivered exactly what we needed on time and beyond expectations. His attention to detail and problem-solving skills are top-notch.</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="customer">
+                <img src="images/isabella.jpg" alt="Isabella">
+                <div class="customer-info">
+                  <p class="customer-name">Isabella</p>
+                  <p class="headertxt">CEO — Glosom</p>
+                </div>
+              </div>
+              <div class="review">
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+                <p class="review1">We came to MickPaul with just a concept, and he turned it into a fully working web application. He has a great eye for design, usability, and performance. Highly recommended for anyone looking for a developer who truly cares about quality.</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="customer">
+                <img src="images/john.jpg" alt="John">
+                <div class="customer-info">
+                  <p class="customer-name">John</p>
+                  <p class="headertxt">Co-founder — Capital Markets</p>
+                </div>
+              </div>
+              <div class="review">
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+                <p class="review1">MickPaul is not only a skilled developer but also a great collaborator. He explained technical concepts in simple terms and worked seamlessly with our team. His adaptability and professionalism made the entire project stress-free and enjoyable.</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="customer">
+                <img src="images/Barbra.jpg" alt="Barbra">
+                <div class="customer-info">
+                  <p class="customer-name">Barbra</p>
+                  <p class="headertxt">City Hall Advocates</p>
+                </div>
+              </div>
+              <div class="review">
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+                <p class="review1">MickPaul brought professionalism and creativity to our project. He listened carefully, adapted quickly, and produced results that our entire team was proud of. We will definitely work with him again.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <button id="next" class="nav-btn"><i class="fa-solid fa-chevron-right"></i></button>
       </div>
+    </div>
+  </section>
 
-      <div class="projectOne">
-        <p class="projectHead">Axa Gadgets</p>
-        <img class="projectImage" src="images/axagadgets.png">
-        <p class="projectDes">E-commerce frontend for tech gadget store.</p>
-        <a href="https://axa-gadgets.vercel.app/" target="_blank"><button class="linkBtn">Live Demo</button></a>
+  <!-- ── Contact ── -->
+  <section class="contact-section" id="contact">
+    <div class="section-inner">
+      <div class="section-label"><span>07</span> Contact</div>
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contactDes">Have a project or idea? Feel free to reach out — I'm open to freelance gigs, collaborations, and workshops.</p>
+      <div class="contactContent">
+
+        <div class="forms">
+          <form id="contactForm" method="POST" action="https://formspree.io/f/xjkvjwll">
+            <p class="formHeadings">Name</p>
+            <input class="formInputs" type="text" name="NAME" placeholder="Your full name" id="nameInput" required>
+            <p class="formHeadings">Phone</p>
+            <input class="formInputs" type="text" name="CONTACT" placeholder="Your phone number" id="contactInput" required>
+            <p class="formHeadings">Email</p>
+            <input class="formInputs" type="email" name="EMAIL" placeholder="your@email.com" id="emailInput" required>
+            <p class="formHeadings">Company (optional)</p>
+            <input class="formInputs" type="text" name="COMPANY NAME" placeholder="Your company name" id="companyInput">
+            <p class="formHeadings">Message</p>
+            <textarea class="formInputs formTextarea" name="MESSAGE" placeholder="Tell me about your project..." id="messageInput" required></textarea>
+            <button class="sendBtn" type="submit">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+          <p class="status" id="status"></p>
+        </div>
+
+        <div class="contact-side">
+          <p class="contact-side-title">Connect with me</p>
+          <div class="links">
+            <a href="" title="GitHub"><img src="socials/github.png" alt="GitHub"><span>GitHub</span></a>
+            <a href="" title="Email"><img src="socials/email.png" alt="Email"><span>Email</span></a>
+            <a href="" title="Instagram"><img src="socials/instagram.png" alt="Instagram"><span>Instagram</span></a>
+            <a href="" title="X (Twitter)"><img src="socials/x.png" alt="X"><span>X / Twitter</span></a>
+            <a href="https://www.linkedin.com/in/mickpaul-kuteesa-b7a0bb333/" target="_blank" title="LinkedIn"><img src="socials/linkedin.png" alt="LinkedIn"><span>LinkedIn</span></a>
+          </div>
+        </div>
+
       </div>
     </div>
-  </div>
-  <div class="contact" id="contact">
-    <p class="contactHead">Contact</p>
-  </div>
-  <p class="contactDes">Do you have a project or any idea? Feel free to send me a message. I am also open to any workshops and freelance gigs. </p>
-  <div class="contactContent">
+  </section>
 
-    <div class="forms">
+  <footer class="footer">
+    <p class="footertxt"><b>MickPaul</b> &nbsp;|&nbsp; Copyright &copy;2026 All rights reserved.</p>
+  </footer>
 
+  <script src="script.js" defer></script>
+  <script src="form.js" defer></script>
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
 
-
-    <form id="contactForm" method="POST" action="https://formspree.io/f/xjkvjwll"  >
-
-        <p class="formHeadings">Name</p>
-        <input class="formInputs" type="name" name="NAME" placeholder=" Type your name here" id="name" required>
-        <p class="formHeadings">Contact</p>
-        <input class="formInputs" type="contact" name="CONTACT" placeholder="Type your contact here" id="email" required>
-        <p class="formHeadings">Email</p>
-        <input class="formInputs" type="email" name="EMAIL" placeholder="Type your email here" id="email" required>
-        <p class="formHeadings" >Company name(optional)</p>
-        <input class="formInputs" type="name" name="COMPANY NAME" placeholder="Type your company name here" id="Company">
-        <p class="formHeadings">Message</p>
-        <input class="formInputs" type="message" name="MESSAGE" placeholder="Type your message here" id="message" required >
-        <button class="sendBtn" type="submit">SEND</button>
-
-    </form>
-
-        <p class="status" id="status"></p>
-
-    </div>
-
-
-
-    <div class="links">
-      <a href=""><img src="socials/github.png" alt="1"></a>
-      <a href=""><img src="socials/email.png" alt="2"></a>
-      <a href=""><img src="socials/instagram.png" alt="3"></a>
-      <a href=""><img src="socials/x.png" alt="4"></a>
-      <a href="https://www.linkedin.com/in/mickpaul-kuteesa-b7a0bb333/"><img src="socials/linkedin.png" alt="5"></a>
-    </div>
-    
-    </div>
-    <div class="footer">
-      <p class="footertxt">
-       <b>MickPaul</b> | Copyright ©2026 All rights reserved.
-      </p>
-    </div>
-    
-    <script src="script.js" defer ></script>
-    <script src="form.js" defer></script>
-
-<script>
-  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-</script>
-<script defer src="/_vercel/insights/script.js"></script>
-
-    
 </body>
 </html>
