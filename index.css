@@ -428,7 +428,7 @@ body::after {
   height: 300px;
   width: 300px;
   border-radius: 50%;
-  background-image: url(images/4.png);
+  background-image: url(images/profile.png);
   background-size: cover;
   background-position: center;
 }
